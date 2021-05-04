@@ -1,8 +1,6 @@
 
-#AZ-304: Lab file names in GitHub 
+#AZ-304: Lab file names 
  
-**Source repo: [https://github.com/MicrosoftLearning/AZ-304-Microsoft-Azure-Architect-Design/](https://github.com/MicrosoftLearning/AZ-304-Microsoft-Azure-Architect-Design/)**
-
 
 **Module 3 Lab**
 
