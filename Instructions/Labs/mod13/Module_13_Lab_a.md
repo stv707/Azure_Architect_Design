@@ -85,13 +85,8 @@ The main tasks for this exercise are as follows:
 1. From the Cloud Shell pane, run the following to create a resource groups (replace the `<Azure region>` placeholder with the name of the Azure region that is available for deployment of Azure VMs in your subscription and which is closest to the location of your lab computer):
 
    ```powershell
-   $location = '<Azure region>'
-   New-AzSubscriptionDeployment `
-     -Location $location `
-     -Name az30304subaDeployment `
-     -TemplateFile $HOME/azuredeploy30304suba.json `
-     -rgLocation $location `
-     -rgName 'az30304a-labRG'
+   $location = 'southeastasia'
+   New-AzSubscriptionDeployment -Location $location -Name az30304subaDeployment -TemplateFile azuredeploy30304suba.json -rgLocation $location -rgName 'az30304a-labRG'
    ```
 
       > **Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
@@ -103,17 +98,12 @@ The main tasks for this exercise are as follows:
 1. From the Cloud Shell pane, run the following to deploy a Azure VM running Windows Server 2019 that you will be using in this lab:
 
    ```powershell
-   New-AzResourceGroupDeployment `
-     -Name az30304rgaDeployment `
-     -ResourceGroupName 'az30304a-labRG' `
-     -TemplateFile $HOME/azuredeploy30304rga.json `
-     -TemplateParameterFile $HOME/azuredeploy30304rga.parameters.json `
-     -AsJob
+   New-AzResourceGroupDeployment -Name az30304rgaDeployment -ResourceGroupName 'az30304a-labRG' -TemplateFile azuredeploy30304rga.json -TemplateParameterFile  azuredeploy30304rga.parameters.json 
    ```
 
     > **Note**: Do not wait for the deployment to complete but instead proceed to the next exercise. The deployment should take less than 5 minutes.
 
-1. In the Azure portal, close the **Cloud Shell** pane. 
+1. In the Azure portal, minimize the **Cloud Shell** pane. 
 
 
 ### Exercise 1: Configure authentication and authorization for an Azure logic app
