@@ -4,7 +4,7 @@ lab:
     module: ' Serverless Computing'
 ---
 
-# Lab 09c - Implement Azure Kubernetes Service
+# Lab - Implement Azure Kubernetes Service
 # Student lab manual
 
 ## Lab scenario
