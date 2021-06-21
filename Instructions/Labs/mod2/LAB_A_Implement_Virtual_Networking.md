@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '04 - Implement Virtual Networking'
-    module: 'Module 04 - Virtual Networking'
+    title: 'Implement Virtual Networking'
+    module: 'Virtual Networking'
 ---
 
-# Lab 04 - Implement Virtual Networking
+# Lab - Implement Virtual Networking
 
 # Student lab manual
 
